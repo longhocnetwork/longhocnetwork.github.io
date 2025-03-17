@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Website shopping",
+        "time": "2020",
+        "location": "Manager",
+        "web": "example.com",
+        "description": "Your project description.",
+        "features": [
+            "Developed a responsive shopping website using HTML, CSS, and JavaScript.",
+            "Integrated secure payment gateway for seamless transactions.",
+            "Implemented a user-friendly interface with optimized navigation."
+        ]
+    },
+    {
+        "name": "Website shopping",
+        "time": "2020",
+        "location": "Manager",
+        "web": "example.com",
+        "description": "Your project description.",
+        "features": [
+            "Collaborated with a team to design and develop an e-commerce platform.",
+            "Deployed backend services with Node.js and MongoDB.",
+            "Optimized website performance for faster load times."
+        ]
+    },
+    {
+        "name": "Website shopping",
+        "time": "2020",
+        "location": "Manager",
+        "web": "example.com",
+        "description": "Your project description.",
+        "features": [
+            "Designed and implemented product search functionality.",
+            "Ensured cross-browser compatibility for all major web browsers.",
+            "Maintained documentation for project requirements and updates."
+        ]
+    }
+]
