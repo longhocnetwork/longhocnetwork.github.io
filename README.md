@@ -1,1 +1,1 @@
-# longhocnetwork-longhocnetwork.github.io
+# longhocnetwork.github.io
