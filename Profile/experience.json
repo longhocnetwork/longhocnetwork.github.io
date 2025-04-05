@@ -1,0 +1,26 @@
+[
+    {
+        "role": "Student",
+        "company": "University of Transport and Communications",
+        "time": "2021 - 2026",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."
+    },
+    {
+        "role": "Intern",
+        "company": "Vietnam Posts and Telecommunications Group - VNPT",
+        "time": "05/2024 - 08/2024",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."
+    },
+    {
+        "role": "Customer Service",
+        "company": "Tien Phong Bank",
+        "time": "06/2023 - 09/2023",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."
+    },
+    {
+        "role": "Customer Service",
+        "company": "Monkey VietNam",
+        "time": "07/2022 - 04/2024",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."
+    }
+]
