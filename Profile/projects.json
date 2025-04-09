@@ -1,14 +1,31 @@
-[
-    {
+{
+    "en": [
+      {
         "name": "Updating",
         "time": "Updating",
         "location": "Updating",
         "web": "Updating",
         "description": "Updating",
         "features": [
-            "Updating",
-            "Updating",
-            "Updating"
+          "Updating",
+          "Updating",
+          "Updating"
         ]
-    }
-]
+      }
+    ],
+    "vi": [
+      {
+        "name": "Đang cập nhật",
+        "time": "Đang cập nhật",
+        "location": "Đang cập nhật",
+        "web": "Đang cập nhật",
+        "description": "Đang cập nhật",
+        "features": [
+          "Đang cập nhật",
+          "Đang cập nhật",
+          "Đang cập nhật"
+        ]
+      }
+    ]
+  }
+  

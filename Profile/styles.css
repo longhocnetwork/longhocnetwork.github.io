@@ -10,19 +10,12 @@ body {
     background-color: #D5D5D5;
     font-family: system-ui;
 }
-.download {
-    width: 150px;
-    height: 30px;
-    position: absolute;
-    right: 2%;
-    top: 2%;
-}
 .container {
     background-color: #ffffff;
     width: 1000px;
     max-width: 100%;
     padding: 50px;
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: -25%;
     box-shadow: 0 10px 50px #858585;
     display: grid;
@@ -39,7 +32,7 @@ body {
 }
 .avatar {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 .name {
@@ -96,8 +89,12 @@ h2 {
 .experience {
     text-align: right;
 }
+.des {
+    text-align: justify;
+}
 .experience h4 {
-    margin:20px 0 10px;
+    margin:10px 0 5px;
+    font-size: 18px;
 }
 .skills {
     margin-top:  50px;
@@ -137,4 +134,43 @@ h2 {
     content: '';
     border-radius: 50%;
     left: -37px;
+}
+/* Căn vị trí download theo ngôn ngữ */
+.download {
+    position: fixed;
+    top: 10px;
+    left: 63%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.changeLanguage {
+    position: fixed; /* giữ cố định khi cuộn trang */
+    top: 10px; /* cách mép trên 10px */
+    left: 50%; /* đẩy sang giữa */
+    transform: translateX(-50%); /* căn giữa theo chiều ngang */
+    z-index: 1000; /* đảm bảo nằm trên các phần khác */
+    background-color: white; /* nếu cần nổi bật trên nền */
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.changeLanguage button, .download button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.changeLanguage button:hover, .download button:hover {
+    background-color: #9a9a9a;
 }
