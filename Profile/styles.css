@@ -135,26 +135,26 @@ h2 {
     border-radius: 50%;
     left: -37px;
 }
-/* Căn vị trí download theo ngôn ngữ */
-.download {
+
+.btn {
+    display: flex;
     position: fixed;
     top: 10px;
-    left: 63%;
+    left: 50%;
     transform: translateX(-50%);
+}
+.download {
     z-index: 1000;
     background-color: white;
+    margin-left: 10px;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .changeLanguage {
-    position: fixed; /* giữ cố định khi cuộn trang */
-    top: 10px; /* cách mép trên 10px */
-    left: 50%; /* đẩy sang giữa */
-    transform: translateX(-50%); /* căn giữa theo chiều ngang */
-    z-index: 1000; /* đảm bảo nằm trên các phần khác */
-    background-color: white; /* nếu cần nổi bật trên nền */
+    z-index: 1000;
+    background-color: white;
     padding: 5px 10px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

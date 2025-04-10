@@ -11,17 +11,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
-<body class="lang-vi">
-    <div class="changeLanguage">
-        <button onclick="changeLanguage('vi')">Vietnamese</button>
-        <button onclick="changeLanguage('en')">English</button>
+<body>
+    <div class="btn">
+        <div class="changeLanguage">
+            <button onclick="changeLanguage('vi')">Vietnamese</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+        <div class="download">
+            <button class="vi" onclick="download()">Tải CV</button>
+            <button class="en" onclick="download()">Download Resume</button>
+        </div>
     </div>
-
-    <div class="download">
-        <button class="vi" onclick="download()">Tải CV</button>
-        <button class="en" onclick="download()">Download Resume</button>
-    </div>
-
     <div class="container">
         <div class="avatar">
             <img src="avartar.png" alt="Avatar">
@@ -50,7 +50,7 @@
             <ul>
                 <li>Địa chỉ: <b>Hà Nội</b> - Việt Nam</li>
                 <li>Ngày sinh: 22/08/2003</li>
-                <li>Đại học Giao Thông Vận Tải</li>
+                <li>Trường Đại học Giao Thông Vận Tải</li>
             </ul>
         </div>
         <div class="info en">
