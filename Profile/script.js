@@ -59,26 +59,38 @@ function renderProjects(projects, container) {
     let html = `<h2>${currentLang === 'vi' ? 'DỰ ÁN' : 'PROJECTS'}</h2>`;
 
     projects.forEach(project => {
-        html += `
-            <div class="item">
-                <h4>${project.name}</h4>
-                <div class="time">${project.time}</div>
-                <div class="web">
-                    <a href="${project.web}" target="_blank">${project.web}</a>
-                </div>
-                <div class="location">${project.location}</div>
-                <div class="des">
-                    <p>${project.description}</p>
-                    <ul>
-                        ${project.features.map(f => `<li>${f}</li>`).join('')}
-                    </ul>
-                </div>
+        html += `<div class="item">`;
+        if (project.name) {
+            html += `<h4>${project.name}</h4>`;
+        }
+        if (project.time) {
+            html += `<div class="time">${project.time}</div>`;
+        }
+        if (project.web) {
+            const url = project.web.startsWith('http') ? project.web : 'https://' + project.web;
+            html += `
+            <div class="web">
+                <a href="${url}" target="_blank">${project.web}</a>
             </div>
-        `;
+            `;
+        }
+        if (project.location) {
+            html += `<div class="location">${project.location}</div>`;
+        }
+        if (project.description || (project.features && project.features.length > 0)) {
+            if (project.description) {
+                html += `<div class="des">${project.description}</div>`;
+            }
+            if (project.features && project.features.length > 0) {
+                html += `<ul>${project.features.map(f => `<li>${f}</li>`).join('')}</ul>`;
+            }
+            html += `</div>`;
+        }
+        html += `</div>`;
     });
-
     container.innerHTML = html;
 }
+
 
 function download() {
     const filePath = currentLang === 'vi'
@@ -96,3 +108,18 @@ function download() {
     link.click();
     document.body.removeChild(link);
 }
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+document.addEventListener('wheel', function (e) {
+    if (e.ctrlKey) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+document.addEventListener('keydown', function (e) {
+    if (e.ctrlKey && (e.key === '+' || e.key === '-' || e.key === '=' || e.key === '0')) {
+        e.preventDefault();
+    }
+});
